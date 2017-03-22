@@ -69,9 +69,13 @@ function update0853to0855() {
 
    $migration->addField("glpi_entities", 'inquest_duration', "integer", array('value' => 0));
 
+   $migration->addField("glpi_users", 'begin_date', "datetime");
+   $migration->addField("glpi_users", 'end_date', "datetime" );
    $migration->addKey('glpi_users', 'begin_date', 'begin_date');
    $migration->addKey('glpi_users', 'end_date', 'end_date');
 
+   $migration->addField("glpi_knowbaseitems", 'begin_date', "datetime");
+   $migration->addField("glpi_knowbaseitems", 'end_date', "datetime");
    $migration->addKey('glpi_knowbaseitems', 'begin_date', 'begin_date');
    $migration->addKey('glpi_knowbaseitems', 'end_date', 'end_date');
 

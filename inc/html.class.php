@@ -6053,14 +6053,14 @@ class Html {
       }
 
       if ($callback === null) {
-         $callback = 'window.location.reload()';
+         $callback = 'function(){ window.location.reload(); }';
       }
 
       $text = "";
       if ($timer > 0) {
          // Refresh automatique  sur tracking.php
          $text.="<script type=\"text/javascript\">\n";
-         $text.="setInterval($callback,".
+         $text.="setTimeout($callback,".
                (60000 * $timer).");\n";
          $text.="</script>\n";
       }

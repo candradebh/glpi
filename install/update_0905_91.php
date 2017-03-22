@@ -65,6 +65,10 @@ function update0905to91() {
          $query         = $migration->renameTable("$new_table", "backup_$new_table");
       }
    }
+
+    $migration->addField("glpi_profiles", 'change_status', "text");
+
+
    if ($backup_tables) {
       $migration->displayWarning("You can delete backup tables if you have no need of them.",
                                  true);

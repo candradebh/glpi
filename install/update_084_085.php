@@ -64,7 +64,7 @@ function update084to085() {
                           'glpi_projectstates', 'glpi_projecttasks', 'glpi_projecttasks_tickets',
                           'glpi_projecttaskteams', 'glpi_projecttasktypes',
                           'glpi_projectteams', 'glpi_projecttypes',
-                          'glpi_queuedmails'
+                          'glpi_queuedmails','glpi_devicefirmwares'
                           // Only do profilerights once : so not delete it
                           /*, 'glpi_profilerights'*/);
 
